@@ -2,6 +2,7 @@ screen
 openssh-server
 vim
 git
+xserver-xorg
 gdm3
 gnome-core
 virtualbox
