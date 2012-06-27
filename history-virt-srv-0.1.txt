@@ -1,0 +1,253 @@
+    1  cat /etc/sudoers
+    2  git st
+    3  git config
+    4  git config --global 
+    5  git config --global alias.st status
+    6  git st
+    7  mv preseed.cfg profiles/virt-srv-0.1.preseed
+    8  git st
+    9  git add .
+   10  git commit -a
+   11  git config --global user.email "zzeroo@virt-srv-0.1.zzeroo.org"
+   12  git config --global user.name "zzeroo systems"
+   13  git st
+   14  git commit -a -m "First commit
+   15  First simple-cdd config and try ..."
+   16  build-simple-cdd --profiles virt-srv-0.1
+   17  ll
+   18  ls
+   19  ls images/
+   20  cdrecord
+   21  aptitude search cdrecord
+   22  dpkg -i cdrecord
+   23  dpkg -h cdrecord
+   24  dpkg -L cdrecord
+   25  aptitude search rw-tools
+   26  aptitude search cd-tools
+   27  aptitude search cd
+   28  aptitude search cdrw
+   29  aptitude search rw
+   30  aptitude search -D bruning
+   31  aptitude search -D bruni
+   32  aptitude search -D brun
+   33  apt-get install cdrecord dvd+rw-tools
+   34  sudo apt-get install cdrecord dvd+rw-tools
+   35  ls
+   36  watch -n du -sc .
+   37  watch -n du 
+   38  watch -n0 du -sc
+   39  watch -n0 du -s
+   40  watch -n0 du -sh
+   41  ls
+   42  du -sch .
+   43  watch du -sch .
+   44  man simple-cdd
+   45  sudo apt-get less
+   46  su
+   47  which simple-cdd
+   48  file /usr/bin/simple-cdd
+   49  ll /usr/bin/simple-cdd 
+   50  ls -l /usr/bin/simple-cdd 
+   51  cat /usr/bin/simple-cdd 
+   52  vim /usr/bin/simple-cdd
+   53  cd my-simple-cdd/
+   54  screen
+   55  apt-get install cdrecord
+   56  cat /var/lib/dpkg/lock 
+   57  sudo apt-get install cdrecord
+   58  su
+   59  cd my-simple-cdd/
+   60  ll
+   61  ls
+   62  wodim images/debian-testing-amd64-CD-1.iso 
+   63  sudo wodim images/debian-testing-amd64-CD-1.iso 
+   64  sudo wodim --device=/dev/sr0 images/debian-testing-amd64-CD-1.iso 
+   65  sudo wodim dev=/dev/sr0 images/debian-testing-amd64-CD-1.iso 
+   66  wodim --devices
+   67  sudo wodim --devices
+   68  sudo wodim -scanbus
+   69  sudo wodim -devices
+   70  aptitude search cdrec
+   71  aptitude search cdrecord
+   72  aptitude search cdrw
+   73  aptitude search cd-rw
+   74  aptitude search rw
+   75  sudo cdrecord
+   76  sudo apt-get install dvd-rw-tools
+   77  sudo apt-get install dvd+rw-tools
+   78  sudo apt-get install growisofs
+   79  aptitude search cdrtools
+   80  aptitude search cdr
+   81  sudo apt-get install cdrskin
+   82  cdrskin 
+   83  cdrskin -h
+   84  sudo cdrskin images/debian-testing-amd64-CD-1.iso 
+   85  sudo cdrskin -h
+   86  sudo cdrskin --help
+   87  man cdrskin
+   88  sudo wodim images/debian-testing-amd64-CD-1.iso 
+   89  sudo wodim images/debian-testing-amd64-CD-1.iso dev=/dev/sr1
+   90  eject /dev/sr1
+   91  sudo eject /dev/sr1
+   92  sudo wodim images/debian-testing-amd64-CD-1.iso dev=/dev/sr1
+   93  sudo wodim 
+   94  sudo wodim --help
+   95  sudo wodim dev=/dev/sr1 -format
+   96  man wodim
+   97  sudo wodim dev=/dev/sr1 blank=fast
+   98  sudo wodim dev=/dev/sr1 images/debian-testing-amd64-CD-1.iso 
+   99  sudo wodim dev=/dev/sr1 blank=fast
+  100  sudo wodim dev=/dev/sr1 images/debian-testing-amd64-CD-1.iso 
+  101  build-simple-cdd --qemu --profile virt-srv-0.1
+  102  build-simple-cdd --qemu --profiles virt-srv-0.1
+  103  apt-get install gdm3 gnome-core
+  104  sudo apt-get install gdm3 gnome-core
+  105  /etc/init.d/gdm3 restart
+  106  sudo /etc/init.d/gdm3 restart
+  107  reboot
+  108  sudo reboot
+  109  screen
+  110  vim my-simple-cdd/profiles/default.preseed
+  111  cd my-simple-cdd/
+  112  screen
+  113  cd my-simple-cdd/
+  114  build-simple-cdd --qemu --profiles virt-srv-0.1
+  115  vim profiles/virt-srv-0.1.packages 
+  116  vim profiles/virt-srv-0.1.preseed 
+  117  man simple-cdd
+  118  apt-get install less
+  119  sudo apt-get install less
+  120  apt-get install less
+  121  man simple-cdd
+  122  git dz
+  123  git st
+  124  vim .gitignore
+  125  git st
+  126  ll 
+  127  ls
+  128  echo "qemu-test.hd.img">>.gitignore 
+  129  git st
+  130  git commit profiles/virt-srv-0.1.packages 
+  131  echo BOOT_TIMEOUT=3 >> profiles/default.conf
+  132  git add .
+  133  git st
+  134  git commit -a -m "Set default timeout for isolinux bootloader
+  135  plus add a gitignore file to exclude the .udeb's and images"
+  136  git st
+  137  build-simple-cdd --profiles virt-srv-0.1
+  138  build-simple-cdd --profiles virt-srv-0.1 --qemu
+  139  man simple-dcc
+  140  man simple-cdd
+  141  build-simple-cdd --profiles virt-srv-0.1 --qemu --force-preseed
+  142  sudo build-simple-cdd --profiles virt-srv-0.1 --qemu --force-root
+  143  ls profiles/
+  144  ln profiles/virt-srv-0.1.preseed profiles/default.preseed
+  145  sudo build-simple-cdd --profiles virt-srv-0.1 --qemu 
+  146  build-simple-cdd --profiles virt-srv-0.1 --qemu 
+  147  sudo chown zzeroo:zzeroo . -R
+  148  build-simple-cdd --profiles virt-srv-0.1 --qemu 
+  149  vim profiles/default.conf 
+  150  vim profiles/syslinux.cfg
+  151  build-simple-cdd --profiles virt-srv-0.1 --qemu 
+  152  cd profiles/
+  153  mp virt-srv-0.1.preseed virt-srv.preseed
+  154  cp virt-srv-0.1.preseed virt-srv.preseed
+  155  cp virt-srv-0.1.packages virt-srv
+  156  cd ..
+  157  build-simple-cdd --profiles virt-srv --qemu 
+  158  vim profiles/default.
+  159  vim profiles/default.conf 
+  160  locale
+  161  vim profiles/default.conf 
+  162  rm profiles/syslinux.cfg 
+  163  vim profiles/
+  164  build-simple-cdd --profiles virt-srv --qemu 
+  165  build-simple-cdd --profiles virt-srv --qemu --force-preseed
+  166  vim profiles/
+  167  build-simple-cdd --profiles virt-srv --qemu --force-preseed
+  168  grep layout profiles/
+  169  build-simple-cdd --profiles virt-srv-0.1 --qemu --force-preseed
+  170  mv profiles/virt-srv-0.1.preseed profiles/virt-srv-0.1.presee_
+  171  build-simple-cdd --profiles virt-srv-0.1 --qemu --force-preseed
+  172  cat /var/log/syslog 
+  173  ls
+  174  kls tmp/
+  175  ls tmp/
+  176  ls tmp/debian-cd/
+  177  ls
+  178  git st
+  179  build-simple-cdd --profiles virt-srv-0.1 --qemu --force-preseed
+  180  build-simple-cdd --profiles virt-srv-0.1 --qemu --force-preseed --locale de_DE.UTF8
+  181  build-simple-cdd --qemu --force-preseed --locale de_DE.UTF8
+  182  build-simple-cdd --profiles virt-srv-0.1 --qemu --force-preseed --locale de_DE.UTF8
+  183  sudo build-simple-cdd --profiles virt-srv-0.1 --qemu --force-root --locale de_DE.UTF8
+  184  build-simple-cdd --profiles virt-srv-0.1 --qemu --locale de_DE.UTF8
+  185  wodim 
+  186  wodim -h
+  187  wodim blank=fast dev=/dev/sr1
+  188  wodim dev=/dev/sr1 images/debian-testing-amd64-CD-1.iso 
+  189  umount  /dev/sr1
+  190  wodim dev=/dev/sr1 images/debian-testing-amd64-CD-1.iso 
+  191  cd my-simple-cdd/
+  192  ls
+  193  rm profiles/virt-srv.p*
+  194  find . |grep virt-srv
+  195  find . |grep virt-srv-
+  196  df -h
+  197  git add profiles/default.preseed 
+  198  rm profiles/default.preseed 
+  199  rm profiles/default.conf 
+  200  git checkout profiles/default.conf 
+  201  cat profiles/default.conf
+  202  vim profiles/default.conf
+  203  vim profiles/default.pre
+  204  vim profiles/default.preseed
+  205  vim profiles/default.preseed 
+  206  vim profiles/default.conf 
+  207  vim profiles/default.preseed 
+  208  cd my-simple-cdd/
+  209  cd ..
+  210  mv my-simple-cdd/ virt-srv
+  211  cd virt-srv/
+  212  git remote add https://github.com/zzeroo/virt-srv.git origin
+  213  git remote add origin https://github.com/zzeroo/virt-srv.git
+  214  git st
+  215  mv profiles/virt-srv-0.1.presee_ profiles/virt-srv-0.1.preseed
+  216  git st
+  217  git add .
+  218  git st
+  219  git commit -a -m "Not working version
+
+preseed dos'nt executed"
+  220  git st
+  221  git push origin master
+  222  ll ~/.ssh
+  223  ls ~/.ssh
+  224  ssh-keygen 
+  225  cat ~/.ssh/id_rsa.pub 
+  226  git push origin master
+  227  git remote -v
+  228  git remote set-url origin ssh://github.com/zzeroo/virt-srv.git
+  229  git remote -v
+  230  git push origin master
+  231  cd
+  232  cd .ssh/
+  233  ll
+  234  ls
+  235  cd ..
+  236  git remote set-url origin git@github.com:zzeroo/virt-srv.git
+  237  cd virt-srv/
+  238  git remote set-url origin git@github.com:zzeroo/virt-srv.git
+  239  git push origin master
+  240  git st
+  241  git checkout origin
+  242  git checkout origin:master
+  243  git push
+  244  git pull
+  245  git pull origin master
+  246  git st
+  247  ls
+  248  git push
+  249  git st
+  250  vim README.md 
+  251  history>history-virt-srv-0.1.txt
