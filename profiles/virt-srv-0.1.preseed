@@ -55,6 +55,9 @@ d-i partman/confirm_write_new_label boolean true
 d-i partman/choose_partition select finish
 d-i partman/confirm boolean true
 
+# Write the changes to disks?
+d-i partman/confirm boolean true
+
 d-i grub-installer/only_debian boolean true
 d-i grub-installer/with_other_os boolean true
 d-i grub-pc/install_devices multiselect /dev/sda
@@ -91,8 +94,8 @@ d-i user-setup/password-weak boolean true
 #################
 d-i passwd/user-fullname string Administrator Virtualisierung
 d-i passwd/username string virt-admin
-d-i passwd/user-password password secure
-d-i passwd/user-password-again password secure
+d-i passwd/user-password password virt-admin
+d-i passwd/user-password-again password virt-admin
 
 #######################
 # Software Selections
